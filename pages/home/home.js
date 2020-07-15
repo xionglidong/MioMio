@@ -5,9 +5,64 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: [],
+    swiperIdx: 0,
+    imgList: [{
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+    ]
   },
-
+  bindchange(e) {
+    this.setData({
+      swiperIdx: e.detail.current
+    })
+  },
+  handleToLower() {
+    this.imgList = [{
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      },
+      {
+        url: '../../static/images/test.jpg'
+      }
+    ]
+    console.log(this.imgList)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

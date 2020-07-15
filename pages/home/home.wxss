@@ -1,1 +1,56 @@
 /* pages/home/home.wxss */
+.banner_warp,
+.banner_warp .banner,
+.banner_warp image {
+  height: 350rpx;
+}
+
+.scroll_view {
+  height: 100vh;
+}
+
+.banner_warp {
+  margin-top: 30rpx;
+}
+
+.banner_warp .banner_warp .li {
+  border-radius: 20rpx;
+  width: 92%;
+  overflow: hidden
+}
+
+.banner_warp .wx-swiper-dot {
+  width: 40rpx;
+  height: 6rpx;
+  background: rgba(255, 255, 255, .2);
+  border-radius: inherit;
+}
+
+.banner_warp .wx-swiper-dot-active {
+  width: 40rpx;
+  height: 6rpx;
+  background: #fff;
+}
+
+.banner_warp image {
+  border-radius: 20rpx;
+}
+
+.content {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  width: 250rpx;
+  overflow: hidden;
+}

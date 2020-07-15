@@ -1,0 +1,32 @@
+<!--pages/category/category.wxml-->
+<view class="container">
+  <view class="title">精选分类</view>
+  <view class="category">
+    <view class="category_cat">
+      <view class='cat_title'>
+      <image class="cat_img" src="../../static/images/cat.png"></image>
+      喵星人</view>
+      <view class="cat_list">
+        <view class="cat_item" wx:for="{{cat_list}}" wx:key="{{index}}">
+          <view class="cat_inner"></view>
+          <view class="cat_info">{{item}}</view>
+        </view>
+
+      </view>
+      <view class="cat_more">查看更多>></view>
+    </view>
+    <view class="category_dog">
+      <view class="dog_title">
+       <image class="dog_img" src="../../static/images/dog.png"></image>
+      汪星人</view>
+      <view class="dog_list">
+        <view class="dog_item" wx:for="{{dog_list}}" wx:key="{{index}}">
+          <view class="dog_inner"></view>
+          <view class="dog_info">{{item}}</view>
+        </view>
+
+      </view>
+      <view class="dog_more">查看更多>></view>
+    </view>
+  </view>
+</view>

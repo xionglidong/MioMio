@@ -1,2 +1,23 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- pages/home/home.wxml -->
+<scroll-view class="scroll_view" scroll-y bindscrolltolower="handleToLower">
+  <view class='banner_warp'>
+    <swiper class='banner' autoplay='true' circular='true' indicator-dots='true'>
+      <block wx:for='{{3}}' wx:key="index">
+        <swiper-item>
+          <view class='li '>
+            <image src='../../static/images/test.jpg' mode='aspectFill'></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="content">
+    <ul>
+      <li wx:for='{{imgList}}' wx:key="index" wx:for-item="item">
+        <navigator open-type="switchTab" hover-class="other-navigator-hover" url="/pages/category/category">
+          <image src="{{item.url}}" mode='aspectFill'></image>
+        </navigator>
+      </li>
+    </ul>
+  </view>
+</scroll-view>

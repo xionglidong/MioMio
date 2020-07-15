@@ -1,13 +1,44 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/category/category",
+    "pages/science/science",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+   
+    "list": [
+      {
+        "selectedIconPath": "static/images/isHome.png",
+        "iconPath": "static/images/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "static/images/isCategory.png",
+        "iconPath": "static/images/category.png",
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "static/images/isScience.png",
+        "iconPath": "static/images/science.png",
+        "pagePath": "pages/science/science",
+        "text": "科普"
+      },
+      {
+        "selectedIconPath": "static/images/isProfile.png",
+        "iconPath": "static/images/profile.png",
+        "pagePath": "pages/profile/profile",
+        "text": "个人"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
